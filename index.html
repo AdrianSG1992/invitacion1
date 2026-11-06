@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1a1517">
+    <meta name="description" content="Acompáñanos a celebrar los XV años de Melisa. ¡Te esperamos!">
+    <title>Mis XV Años | Melisa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@600;700;800;900&family=Great+Vibes&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="invitation-shell">
+      <section class="envelope" id="cover" aria-label="Invitación cerrada">
+        <button class="envelope-button" id="open-invitation" type="button" aria-label="Toca para abrir la invitación de Melisa">
+          <span class="envelope-hint">Toca para abrir</span>
+        </button>
+      </section>
+
+      <div class="invitation-content" id="invitation-content" hidden>
+        <button class="music-toggle" id="music-toggle" type="button" aria-label="Activar música" aria-pressed="false">♫</button>
+
+        <section class="hero page-section" aria-labelledby="hero-title">
+          <div class="hero-top">
+            <span class="hero-logo">Melisa <b>♕</b></span>
+            <span class="hero-note" aria-hidden="true">♪</span>
+          </div>
+          <div class="hero-illustration" aria-hidden="true">
+            <span class="hero-balloon balloon-pink">✦</span>
+            <span class="hero-balloon balloon-yellow">✧</span>
+            <span class="hero-crown">♕</span>
+            <!-- Para poner su foto: <div class="portrait-frame"><img src="foto.jpg" alt=""></div> -->
+            <div class="portrait-frame"><span>M</span><small>Mis XV</small></div>
+            <span class="hero-sparkle sparkle-left">♪</span>
+            <span class="hero-sparkle sparkle-right">✦</span>
+          </div>
+          <div class="hero-name">
+            <span class="name-ribbon">Celebra conmigo</span>
+            <h2 id="hero-title">Melisa</h2>
+          </div>
+          <div class="age-lockup">
+            <span class="age-label">Mis</span>
+            <strong>XV</strong>
+            <span class="age-years">años</span>
+          </div>
+          <p class="section-message">Hay momentos que se viven una sola vez,<br>y quiero compartir este contigo.</p>
+          <div class="wave wave-bottom" aria-hidden="true"></div>
+        </section>
+
+        <section class="countdown-section page-section" aria-labelledby="countdown-title">
+          <div class="section-heading">
+            <span class="sticker-heading">¡Falta<br>poco!</span>
+            <p id="countdown-title">Mi gran noche<br>se acerca...</p>
+          </div>
+          <div class="clock-art" aria-hidden="true"><span>✦</span><b>◷</b></div>
+          <div class="countdown" role="timer" aria-label="Cuenta regresiva para la fiesta">
+            <div class="countdown-card pink"><strong id="days">00</strong><span>Días</span></div>
+            <div class="countdown-card blue"><strong id="hours">00</strong><span>Horas</span></div>
+            <div class="countdown-card orange"><strong id="minutes">00</strong><span>Minutos</span></div>
+            <div class="countdown-card purple"><strong id="seconds">00</strong><span>Segundos</span></div>
+          </div>
+          <p class="section-message">Prepárate para una noche llena de<br>baile, emociones y recuerdos.</p>
+          <div class="bottom-confetti" aria-hidden="true">✦ &nbsp; ♪ &nbsp; ♕ &nbsp; ♪ &nbsp; ✦</div>
+        </section>
+
+        <section class="date-section page-section" aria-labelledby="date-title">
+          <span class="sticker-heading" id="date-title">Aparta<br>la fecha</span>
+          <div class="calendar-card">
+            <span class="calendar-tab tab-left"></span><span class="calendar-tab tab-right"></span>
+            <p class="calendar-day">Sábado</p>
+            <strong class="calendar-date">19</strong>
+            <p class="calendar-month">de diciembre</p>
+            <p class="calendar-year">del 2026</p>
+            <p class="calendar-time"><span aria-hidden="true">◷</span> 7:00 PM</p>
+          </div>
+          <p class="bubble-message">¡Será una noche<br>inolvidable!</p>
+          <a class="calendar-link" href="#" id="calendar-link">＋ Agregar a mi calendario</a>
+          <div class="bottom-confetti" aria-hidden="true">♕ &nbsp; ✦ &nbsp; ♪ &nbsp; ♕</div>
+        </section>
+
+        <section class="location-section page-section" aria-labelledby="location-title">
+          <span class="location-icon" aria-hidden="true">⌖</span>
+          <span class="sticker-heading">¡Te esperamos!</span>
+          <h2 id="location-title">¿Dónde será?</h2>
+          <div class="map-card" aria-hidden="true">
+            <div class="map-road road-one"></div><div class="map-road road-two"></div>
+            <span class="map-park">✿</span><span class="map-pin">♥</span>
+            <span class="map-label">¡Aquí es mi fiesta!</span>
+          </div>
+          <p class="address">Salón de Eventos (nombre del lugar)<br>Calle y número, Colonia, Ciudad</p>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Salon+de+Eventos" target="_blank" rel="noopener noreferrer">Abrir mapa <span aria-hidden="true">↗</span></a>
+        </section>
+
+        <section class="letter-section page-section" aria-labelledby="letter-title">
+          <span class="sticker-heading" id="letter-title">Mi carta<br>para ti</span>
+          <p class="letter-text">Quince años son una etapa llena de sueños, aprendizajes y cariño.<br><br>Quiero agradecerte por ser parte de mi camino, y por eso me haría muy feliz que me acompañes en una noche que recordaré toda la vida.</p>
+          <p class="letter-sign">— Melisa</p>
+          <div class="family">
+            <div><h3>Mis padres</h3><p>Nombre del papá<br>Nombre de la mamá</p></div>
+            <div><h3>Mis padrinos</h3><p>Nombre del padrino<br>Nombre de la madrina</p></div>
+          </div>
+        </section>
+
+        <section class="agenda-section page-section" aria-labelledby="agenda-title">
+          <span class="sticker-heading" id="agenda-title">Itinerario</span>
+          <ol class="timeline">
+            <li><time>6:00 PM</time><span><b>Misa</b>Parroquia (nombre del lugar)</span></li>
+            <li><time>7:00 PM</time><span><b>Recepción</b>Bienvenida y cóctel</span></li>
+            <li><time>8:00 PM</time><span><b>Vals</b>Baile de la quinceañera</span></li>
+            <li><time>8:30 PM</time><span><b>Cena</b>Banquete</span></li>
+            <li><time>10:00 PM</time><span><b>Baile</b>¡A la pista!</span></li>
+            <li><time>1:00 AM</time><span><b>Fin</b>Hasta pronto</span></li>
+          </ol>
+        </section>
+
+        <section class="dress-section page-section" aria-labelledby="dress-title">
+          <span class="sticker-heading" id="dress-title">Código de<br>vestimenta</span>
+          <p class="dress-type">Formal</p>
+          <p class="dress-note">Te pido de favor reservar el color <b>negro</b> y el <b>dorado</b> para mí y mi corte de honor.</p>
+          <div class="dress-swatches" aria-hidden="true"><i class="sw-black"></i><i class="sw-gold"></i></div>
+          <h3 class="mini-title">Mesa de regalos</h3>
+          <p class="dress-note">Tu presencia es mi mejor regalo. Si deseas tener un detalle conmigo, puedes hacerlo con:</p>
+          <p class="gift-line">Lluvia de sobres &nbsp;·&nbsp; Transferencia<br><small>Banco · CLABE 0000 0000 0000 0000 00</small></p>
+          <p class="hashtag">#MelisaXV</p>
+        </section>
+
+        <section class="rsvp-section page-section" aria-labelledby="rsvp-title">
+          <span class="sticker-heading" id="rsvp-title">Confirma tu<br>asistencia</span>
+          <p class="rsvp-note">Por favor confirma antes del <b>1 de diciembre</b>.</p>
+          <form class="rsvp-form" id="rsvp-form">
+            <label>Tu nombre<input name="nombre" required autocomplete="name" placeholder="Nombre y apellido"></label>
+            <label>Número de lugares<select name="lugares"><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+            <div class="rsvp-buttons">
+              <button type="submit" data-reply="si">Sí asistiré</button>
+              <button type="submit" data-reply="no" class="rsvp-no">No podré asistir</button>
+            </div>
+          </form>
+          <p class="rsvp-small">Se abrirá WhatsApp con tu respuesta lista para enviar.</p>
+        </section>
+
+        <section class="closing-section page-section" aria-labelledby="closing-title">
+          <div class="closing-stars" aria-hidden="true">✦ ♕ ✧ ✦</div>
+          <p class="closing-eyebrow">Gracias por ser parte</p>
+          <h2 id="closing-title">de mis<br>XV años</h2>
+          <div class="closing-ribbon">¡Nos vemos pronto!</div>
+          <div class="closing-cake" aria-hidden="true"><span>XV</span><i></i><b></b></div>
+          <p class="closing-footer">BAILE, CENA<br>Y MUCHA ALEGRÍA</p>
+          <div class="wave closing-wave" aria-hidden="true"></div>
+        </section>
+      </div>
+
+      <div class="music-dialog" id="music-dialog" role="dialog" aria-modal="true" aria-labelledby="music-title" hidden>
+        <div class="dialog-card">
+          <span class="dialog-icon" aria-hidden="true">♫</span>
+          <h2 id="music-title">¿Quieres activar la música?</h2>
+          <p>Acompaña mi invitación con música.</p>
+          <button class="dialog-button" id="music-yes" type="button">Sí, activar música</button>
+          <button class="dialog-button dialog-secondary" id="music-no" type="button">Entrar sin música</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

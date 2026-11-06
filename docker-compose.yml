@@ -1,0 +1,7 @@
+services:
+  invitacion:
+    build: .
+    container_name: invitacion-melisa
+    restart: unless-stopped
+    ports:
+      - "${HOST_PORT:-8081}:80"
